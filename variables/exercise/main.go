@@ -31,7 +31,7 @@ func main() {
 	fmt.Println("my favorite colo is:", myColor)
 
 	birthYear, age := 1982, 40
-	fmt.Println("I was bor in", birthYear, "and I'm", age, "years old")
+	fmt.Println("I was born in", birthYear, "and I'm", age, "years old")
 
 	var (
 		firstInitial string = "E"
