@@ -36,12 +36,14 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	for i := 1; i <= timesToRoll; i++ {
+		fmt.Println("---NEW ROLL---")
 		sum := 0
 		for j := 1; j <= numberOfDices; j++ {
 			rolled := rand.Intn(numberIfSides) + 1
 			sum += rolled
 			fmt.Println("Roll #", i, "Die #", j, ":", rolled)
 		}
+		fmt.Println("Total Rolled: ", sum)
 		if numberOfDices == 2 && sum == 2 {
 			fmt.Println("Snake eyes")
 		} else if sum == 7 {
