@@ -16,7 +16,9 @@ func main() {
 	fmt.Println(a, b, c, d) // 9 8 7 test
 
 	e, f := 7, "variable"
-	fmt.Println(e, f) // 7 variable
+	fmt.Println(e, f)       // 7, variable
+	g, f := 8, "reassigned" // using comma  with := lets reassign a value to a variable
+	fmt.Println(g, f)       // 8 reassigned
 
 	var (
 		x int = 10
